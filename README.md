@@ -10,3 +10,8 @@ Mapa vsebuje preprosto aplikaicjo Meteor za preverjanje ocene skupnosti GitHub.
 Uporabljena je formula:
 
 *Ocena(skupnosti) = stars + forks + commits + (contributors × 10)*
+
+
+## ElectronClmtrackr
+
+Mapa vsebuje kodo aplikacije Electron, ki uporablja knjičnico cmltrackr.
