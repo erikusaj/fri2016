@@ -11,9 +11,12 @@ Uporabljena je formula:
 *Ocena(skupnosti) = stars + forks + commits + (contributors × 10)*
 
 
+
 ## Electron Clmtrackr
 
 Mapa **electronClmtrackr** vsebuje kodo aplikacije Electron, ki uporablja knjičnico cmltrackr.
+
+
 
 ## Meteor Face Detect
 
