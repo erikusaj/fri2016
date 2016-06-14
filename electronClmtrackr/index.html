@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>WebRTC</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-2.2.4.min.js"></script>
+		<script src="js/clmtrackr.js"></script>
+		<script src="js/dat.gui.min.js"></script>
+		<script src="js/face_deformer.js"></script>
+		<script src="js/poisson_new.js"></script>
+		<script src="js/Stats.js"></script>
+		<script src="js/utils.js"></script>
+		<script src="js/models/model_pca_20_svm.js"></script>
+  </head>
+  <body>
+    Node.js: <script>document.write(process.versions.node)</script>,
+    Chrome: <script>document.write(process.versions.chrome)</script>,
+    Electron: <script>document.write(process.versions.electron)</script>.
+    <br>
+    <button class="waves-effect waves-light btn disabled" id="startbutton">Sledenje</button>
+
+    <select name="mask" id="selectmask" class="input-field ">
+							<option value="0">Average face</option>
+							<option value="1">Jenez</option>
+							<option value="2">Walter</option>
+							<option value="3">Clooney</option>
+							<option value="4">Bieber</option>
+							<option value="5">Kim</option>
+							<option value="6">Rihanna</option>
+							<option value="7">Audrey Hepburn</option>
+							<option value="8">Bill Murray</option>
+							<option value="9">Sean Connery</option>
+							<option value="12">Obama</option>
+							<option value="13">Chuck Norris</option>
+							<option value="14">Mona Lisa</option>
+							<option value="15">Picasso</option>
+							<option value="10">Cage</option>
+							<option value="11">The Queen</option>
+							<option value="16">Abstract (Scream)</option>
+						</select>
+
+
+    <div class="booth">
+      <div id="container">
+          <video id="video" width="600" height="450" preload="auto"></video>
+          <canvas id="overlay" width="600" height="450"></canvas>
+          <canvas id="webgl" width="600" height="450"></canvas>
+      </div>
+      <!-- a href="#" id="capture" class="booth-capture-button"> Slikaj </a -->
+      <canvas id="canvas" width="600" height="450"></canvas>
+      <img id="photo" src="" alt="Foto :)">
+    </div>
+
+
+    <canvas id="webgl2" width="600" height="450"></canvas>
+    <script src="js/electronClmtrackr.js"></script>
+
+  </body>
+</html>
